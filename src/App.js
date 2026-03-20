@@ -45,9 +45,9 @@ function App() {
       <section id="contact" className="contact">
         <h2>Contattami</h2>
         <div className="contact-links">
-          <a href="mailto:cristian@alemanno.it">✉️ Email</a>
-          <a href="https://github.com/cristianalemanno">🐙 GitHub</a>
-          <a href="https://linkedin.com/in/cristianalemanno">💼 LinkedIn</a>
+          <a href="https://github.com/Crew200408">🐙 GitHub</a>
+          <a href="mailto:cristian.alemanno008@gmail.com">✉️ Email</a>
+          <a href="https://www.linkedin.com/in/cristian-alemanno-20213a363/">💼 LinkedIn</a>
         </div>
       </section>
     </div>
