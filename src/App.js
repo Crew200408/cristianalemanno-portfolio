@@ -37,7 +37,9 @@ function App() {
           <div className="project-card">
             <h3>🎮 Unreal Engine</h3>
             <p>Esperimenti 3D e VR con Meta Quest 3</p>
-            <a href="#" className="project-link">In sviluppo</a>
+           <button className="project-link" onClick={() => alert('Progetto in sviluppo!')}>
+              In sviluppo
+          </button>
           </div>
         </div>
       </section>
