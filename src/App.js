@@ -133,6 +133,38 @@ function App() {
               </a>
             </article>
 
+
+
+
+           {/* ── NUOVA CARD: WAVE PHYSICS SIMULATOR ── */}
+  <article className="project-card featured">
+    <div className="project-badge">Live Demo</div>
+    <h3>Wave Physics Simulator</h3>
+    <p>
+      Simulatore interattivo 3D di fenomeni fisici: onde sinusoidali,
+      oceano realistico, pozzi gravitazionali e buco nero con
+      gravitational lensing e disco di accrescimento. Costruito con
+      Three.js, shader GLSL e rendering fisicamente basato.
+    </p>
+    <div className="project-tags">
+      <span>Three.js</span>
+      <span>GLSL</span>
+      <span>WebGL</span>
+      <span>Physics</span>
+      <span>Vite</span>
+    </div>
+    <a
+      href="https://simulator.cristianalemanno.it"
+      className="project-link"
+      target="_blank"
+      rel="noreferrer"
+    >
+      Apri il simulatore →
+    </a>
+  </article>
+        
+
+                  
             <article className="project-card">
               <div className="project-badge">In sviluppo</div>
               <h3>Esperimenti Unreal Engine</h3>
