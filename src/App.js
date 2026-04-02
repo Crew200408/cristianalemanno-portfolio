@@ -120,7 +120,8 @@ function App() {
               <div className="project-tags">
                 <span>PHP</span>
                 <span>MySQL</span>
-                <span>Railway</span>
+                <span>Render</span>
+                <span>Neon</span>
                 <span>Cloudflare</span>
               </div>
               <a
