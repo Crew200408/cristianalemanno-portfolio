@@ -164,22 +164,31 @@ function App() {
     </a>
   </article>
         
-
+<article className="project-card featured">
+  <div className="project-badge">Download</div>
+  <h3>Medieval Landscape UE5</h3>
+  <p>
+    Ambiente medievale realizzato in Unreal Engine 5 con castello, paesaggio
+    naturale e atmosfera cinematografica. Demo scaricabile per Windows.
+  </p>
+  <div className="project-tags">
+    <span>Unreal Engine 5</span>
+    <span>Level Design</span>
+    <span>Environment Art</span>
+    <span>Windows Build</span>
+  </div>
+  <a
+    href="https://TUO-LINK-DEL-FILE-ZIP"
+    className="project-link"
+    target="_blank"
+    rel="noopener noreferrer"
+    download
+  >
+    Scarica la demo →
+  </a>
+</article>
                   
-            <article className="project-card">
-              <div className="project-badge">In sviluppo</div>
-              <h3>Esperimenti Unreal Engine</h3>
-              <p>
-                Studio e prototipazione di ambienti 3D, VR e logiche interattive
-                con focus su immersione, simulazione e architettura del gameplay.
-              </p>
-              <div className="project-tags">
-                <span>Unreal Engine</span>
-                <span>VR</span>
-                <span>3D</span>
-              </div>
-              <span className="project-link disabled">In evoluzione</span>
-            </article>
+          
           </div>
         </section>
 
