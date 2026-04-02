@@ -178,7 +178,7 @@ function App() {
     <span>Windows Build</span>
   </div>
   <a
-    href="https://cristianalemanno.it/medieval-landscape-ue5-windows.rar"
+    href="https://pub-72757ec3e04c44bcab9cf601a0112a6e.r2.dev/medieval-landscape-ue5-windows.rar"
     className="project-link"
     target="_blank"
     rel="noopener noreferrer"
