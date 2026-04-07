@@ -187,7 +187,25 @@ function App() {
     Scarica la demo →
   </a>
 </article>
-                  
+
+
+      <article className="project-card">
+  <div className="project-badge">Anteprima editoriale</div>
+  <h3>Dal quaderno alla realtà — Volume 1</h3>
+  <p>
+    Primo volume della collana “Dal quaderno alla realtà”, dedicato alla
+    relatività ristretta e generale. Un progetto di divulgazione e studio
+    pensato per trasformare concetti fisici complessi in un percorso più
+    chiaro, strutturato e concreto.
+  </p>
+  <div className="project-tags">
+    <span>Fisica</span>
+    <span>Relatività ristretta</span>
+    <span>Relatività generale</span>
+    <span>Volume 1</span>
+  </div>
+  <span className="project-link disabled">Anteprima non ancora apribile</span>
+</article>
           
           </div>
         </section>
