@@ -19,7 +19,7 @@ function App() {
             Ciao, sono <span className="name">Cristian Alemanno</span>
           </h1>
           <p className="subtitle">
-            Studente di informatica, sviluppatore web e appassionato di
+            Studente di informatica, sviluppatore web e appassionato di fisica,
             intelligenza artificiale, simulazioni, Unreal Engine e progetti
             digitali evoluti.
           </p>
