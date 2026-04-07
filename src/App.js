@@ -3,9 +3,13 @@ import React from 'react';
 function App() {
   return (
     <div className="App">
+      {/* =========================
+          HERO / HEADER PRINCIPALE
+          ========================= */}
       <header className="hero">
         <nav className="topbar">
           <div className="brand">Cristian Alemanno</div>
+
           <div className="topbar-links">
             <a href="#about">Chi sono</a>
             <a href="#projects">Progetti</a>
@@ -15,9 +19,11 @@ function App() {
 
         <div className="hero-content">
           <p className="eyebrow">Developer Portfolio</p>
+
           <h1>
             Ciao, sono <span className="name">Cristian Alemanno</span>
           </h1>
+
           <p className="subtitle">
             Studente di informatica, sviluppatore web e appassionato di fisica,
             intelligenza artificiale, simulazioni, Unreal Engine e progetti
@@ -28,11 +34,12 @@ function App() {
             <a href="#projects" className="btn primary">
               Esplora i progetti
             </a>
+
             <a
               href="https://tenutaalexandra.cristianalemanno.it"
               className="btn secondary"
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
             >
               Sito azienda agricola
             </a>
@@ -41,6 +48,9 @@ function App() {
       </header>
 
       <main>
+        {/* =========================
+            SEZIONE PROFILO / ABOUT
+            ========================= */}
         <section id="about" className="section about">
           <div className="section-header">
             <p className="section-tag">Profilo</p>
@@ -71,13 +81,18 @@ function App() {
               <h3>Obiettivo</h3>
               <p>
                 Costruire progetti concreti, eleganti e ambiziosi, capaci di
-                unire interfacce moderne, backend solidi e idee ad alto contenuto
-                tecnico.
+                unire interfacce moderne, backend solidi e idee ad alto
+                contenuto tecnico.
               </p>
             </div>
           </div>
         </section>
 
+        {/* =========================
+            SEZIONE PROGETTI
+            Tutte le card devono stare
+            dentro project-grid
+            ========================= */}
         <section id="projects" className="section projects">
           <div className="section-header">
             <p className="section-tag">Lavori e sviluppo</p>
@@ -85,38 +100,47 @@ function App() {
           </div>
 
           <div className="project-grid">
+            {/* Progetto ARCHON */}
             <article className="project-card featured">
               <div className="project-badge">Project</div>
+
               <h3>ARCHON</h3>
+
               <p>
                 Simulatore multiverso gerarchico con frontend React, backend
                 Python/FastAPI e componenti visuali avanzati. Un progetto
                 orientato a simulazione, struttura dati e interazione.
               </p>
+
               <div className="project-tags">
                 <span>React</span>
                 <span>FastAPI</span>
                 <span>Three.js</span>
                 <span>AI</span>
               </div>
+
               <a
                 href="https://archon.cristianalemanno.it"
                 className="project-link"
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener noreferrer"
               >
                 Apri ARCHON →
               </a>
             </article>
 
+            {/* Progetto Tenuta Alexandra */}
             <article className="project-card">
               <div className="project-badge">Live Site</div>
+
               <h3>Tenuta Alexandra</h3>
+
               <p>
                 Sito web per azienda agricola biologica con catalogo prodotti,
                 disponibilità giornaliera, ordini, area clienti e gestione
                 amministrativa.
               </p>
+
               <div className="project-tags">
                 <span>PHP</span>
                 <span>MySQL</span>
@@ -124,95 +148,113 @@ function App() {
                 <span>Neon</span>
                 <span>Cloudflare</span>
               </div>
+
               <a
                 href="https://tenutaalexandra.cristianalemanno.it"
                 className="project-link"
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener noreferrer"
               >
                 Visita il sito →
               </a>
             </article>
 
-           {/* ── NUOVA CARD: WAVE PHYSICS SIMULATOR ── */}
-  <article className="project-card featured">
-    <div className="project-badge">Live Demo</div>
-    <h3>Wave Physics Simulator</h3>
-    <p>
-      Simulatore interattivo 3D di fenomeni fisici: onde sinusoidali,
-      oceano realistico, pozzi gravitazionali e buco nero con
-      gravitational lensing e disco di accrescimento. Costruito con
-      Three.js, shader GLSL e rendering fisicamente basato.
-    </p>
-    <div className="project-tags">
-      <span>Three.js</span>
-      <span>GLSL</span>
-      <span>WebGL</span>
-      <span>Physics</span>
-      <span>Vite</span>
-    </div>
-    <a
-      href="https://simulator.cristianalemanno.it"
-      className="project-link"
-      target="_blank"
-      rel="noreferrer"
-    >
-      Apri il simulatore →
-    </a>
-  </article>
+            {/* Simulatore fisico interattivo */}
+            <article className="project-card featured">
+              <div className="project-badge">Live Demo</div>
 
+              <h3>Wave Physics Simulator</h3>
 
-      <article className="project-card">
-  <div className="project-badge">Anteprima editoriale</div>
-  <h3>Dal quaderno alla realtà — Volume 1</h3>
-  <p>
-    Primo volume della collana “Dal quaderno alla realtà”, dedicato alla
-    relatività ristretta e generale. Un progetto di divulgazione e studio
-    pensato per trasformare concetti fisici complessi in un percorso più
-    chiaro, strutturato e concreto.
-  </p>
-  <div className="project-tags">
-    <span>Fisica</span>
-    <span>Relatività ristretta</span>
-    <span>Relatività generale</span>
-    <span>Volume 1</span>
-  </div>
-  <span className="project-link disabled">Anteprima non ancora apribile</span>
-</article>
-          
+              <p>
+                Simulatore interattivo 3D di fenomeni fisici: onde sinusoidali,
+                oceano realistico, pozzi gravitazionali e buco nero con
+                gravitational lensing e disco di accrescimento. Costruito con
+                Three.js, shader GLSL e rendering fisicamente basato.
+              </p>
+
+              <div className="project-tags">
+                <span>Three.js</span>
+                <span>GLSL</span>
+                <span>WebGL</span>
+                <span>Physics</span>
+                <span>Vite</span>
+              </div>
+
+              <a
+                href="https://simulator.cristianalemanno.it"
+                className="project-link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Apri il simulatore →
+              </a>
+            </article>
+
+            {/* Anteprima editoriale non apribile */}
+            <article className="project-card">
+              <div className="project-badge">Anteprima editoriale</div>
+
+              <h3>Dal quaderno alla realtà — Volume 1</h3>
+
+              <p>
+                Primo volume della collana “Dal quaderno alla realtà”, dedicato
+                alla relatività ristretta e generale. Un progetto di
+                divulgazione e studio pensato per trasformare concetti fisici
+                complessi in un percorso più chiaro, strutturato e concreto.
+              </p>
+
+              <div className="project-tags">
+                <span>Fisica</span>
+                <span>Relatività ristretta</span>
+                <span>Relatività generale</span>
+                <span>Volume 1</span>
+              </div>
+
+              <span className="project-link disabled">
+                Anteprima non ancora apribile
+              </span>
+            </article>
+
+            {/* Pagina download dedicata al progetto UE5 */}
+            <article className="project-card featured">
+              <div className="project-badge">Download</div>
+
+              <h3>Medieval Landscape UE5</h3>
+
+              <p>
+                Ambiente medievale realizzato in Unreal Engine 5 con castello,
+                paesaggio naturale e atmosfera cinematografica. Demo disponibile
+                tramite pagina download dedicata.
+              </p>
+
+              <div className="project-tags">
+                <span>Unreal Engine 5</span>
+                <span>Level Design</span>
+                <span>Environment Art</span>
+                <span>Windows Build</span>
+              </div>
+
+              <a
+                href="https://download.cristianalemanno.it/"
+                className="project-link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Apri pagina download →
+              </a>
+            </article>
           </div>
         </section>
 
-        
-<article className="project-card featured">
-  <div className="project-badge">Download</div>
-  <h3>Medieval Landscape UE5</h3>
-  <p>
-    Ambiente medievale realizzato in Unreal Engine 5 con castello, paesaggio
-    naturale e atmosfera cinematografica. Demo scaricabile per Windows.
-  </p>
-  <div className="project-tags">
-    <span>Unreal Engine 5</span>
-    <span>Level Design</span>
-    <span>Environment Art</span>
-    <span>Windows Build</span>
-  </div>
-  <a
-    href="https://download.cristianalemanno.it/index.html"
-    className="project-link"
-    target="_blank"
-    rel="noopener noreferrer"
-    download
-  >
-    Scarica la demo →
-  </a>
-</article>
-
-
+        {/* =========================
+            SEZIONE VISIONE
+            ========================= */}
         <section className="section vision">
           <div className="vision-box">
             <p className="section-tag">Visione</p>
+
             <h2>Costruisco progetti con una direzione precisa</h2>
+
             <p>
               Mi interessa creare prodotti che non siano solo “funzionanti”, ma
               anche coerenti, ambiziosi e ben strutturati: dal portfolio
@@ -222,6 +264,9 @@ function App() {
           </div>
         </section>
 
+        {/* =========================
+            SEZIONE CONTATTI
+            ========================= */}
         <section id="contact" className="section contact">
           <div className="section-header">
             <p className="section-tag">Contatti</p>
@@ -232,7 +277,7 @@ function App() {
             <a
               href="https://github.com/Crew200408"
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
               className="contact-card"
             >
               <span className="contact-icon">🐙</span>
@@ -256,7 +301,7 @@ function App() {
             <a
               href="https://www.linkedin.com/in/cristian-alemanno-20213a363/"
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
               className="contact-card"
             >
               <span className="contact-icon">💼</span>
