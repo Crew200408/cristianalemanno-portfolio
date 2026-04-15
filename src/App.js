@@ -190,29 +190,33 @@ function App() {
               </a>
             </article>
 
-            {/* Anteprima editoriale non apribile */}
+                       {/* Volume 1 della collana "Dal quaderno alla realtà" */}
             <article className="project-card">
-              <div className="project-badge">Anteprima editoriale</div>
-
+              <div className="project-badge">Libro</div>
+            
               <h3>Dal quaderno alla realtà — Volume 1</h3>
-
+            
               <p>
-                Primo volume della collana “Dal quaderno alla realtà”, dedicato
-                alla relatività ristretta e generale. Un progetto di
-                divulgazione e studio pensato per trasformare concetti fisici
-                complessi in un percorso più chiaro, strutturato e concreto.
+                Dalla crisi della fisica classica alla rivoluzione einsteiniana: un
+                percorso chiaro e rigoroso nella relatività ristretta e generale, senza
+                salti logici, con formule derivate passo dopo passo e supporto visivo.
               </p>
-
+            
               <div className="project-tags">
                 <span>Fisica</span>
-                <span>Relatività ristretta</span>
-                <span>Relatività generale</span>
+                <span>Relatività</span>
+                <span>Einstein</span>
                 <span>Volume 1</span>
               </div>
-
-              <span className="project-link disabled">
-                Anteprima non ancora apribile
-              </span>
+            
+              <a
+                href="https://amzn.eu/d/05FvZCk7"
+                className="project-link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Scopri il volume su Amazon →
+              </a>
             </article>
 
             {/* Pagina download dedicata al progetto UE5 */}
