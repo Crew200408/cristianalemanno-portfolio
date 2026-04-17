@@ -227,9 +227,9 @@ function App() {
               <h3>Dal quaderno alla realtà — Volume 2</h3>
             
               <p>
-                Un viaggio nella cosmologia relativistica e negli oggetti più estremi
-                dell’universo, tra espansione cosmica, buchi neri, wormhole e geometria
-                dello spazio-tempo.
+                Dalla geometria dello spazio-tempo alla cosmologia relativistica:
+                un percorso dedicato all’evoluzione dell’universo, ai buchi neri
+                e ai wormhole, costruito con rigore matematico e passaggi chiari.
               </p>
             
               <div className="project-tags">
