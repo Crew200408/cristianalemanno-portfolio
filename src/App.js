@@ -219,6 +219,32 @@ function App() {
               </a>
             </article>
 
+
+              {/* Volume 2 in fase di scrittura */}
+            <article className="project-card">
+              <div className="project-badge">In scrittura</div>
+            
+              <h3>Dal quaderno alla realtà — Volume 2</h3>
+            
+              <p>
+                Un viaggio nella cosmologia relativistica e negli oggetti più estremi
+                dell’universo, tra espansione cosmica, buchi neri, wormhole e geometria
+                dello spazio-tempo.
+              </p>
+            
+              <div className="project-tags">
+                <span>Relatività generale</span>
+                <span>Cosmologia</span>
+                <span>Buchi neri</span>
+                <span>Volume 2</span>
+              </div>
+            
+              <span className="project-link disabled">In fase di scrittura</span>
+            </article>
+
+
+
+
             {/* Pagina download dedicata al progetto UE5 */}
             <article className="project-card featured">
               <div className="project-badge">Download</div>
