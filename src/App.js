@@ -220,16 +220,17 @@ function App() {
             </article>
 
 
-              {/* Volume 2 in fase di scrittura */}
+            {/* Volume 2 della collana "Dal quaderno alla realtà" */}
             <article className="project-card">
-              <div className="project-badge">In scrittura</div>
+              <div className="project-badge">Libro</div>
             
               <h3>Dal quaderno alla realtà — Volume 2</h3>
             
               <p>
                 Dalla geometria dello spazio-tempo alla cosmologia relativistica:
                 un percorso dedicato all’evoluzione dell’universo, ai buchi neri
-                e ai wormhole, costruito con rigore matematico e passaggi chiari.
+                e ai wormhole, costruito con rigore matematico, passaggi chiari
+                e una trattazione progressiva dei concetti più complessi.
               </p>
             
               <div className="project-tags">
@@ -239,7 +240,14 @@ function App() {
                 <span>Volume 2</span>
               </div>
             
-              <span className="project-link disabled">In fase di scrittura</span>
+              <a
+                href="https://amzn.eu/d/0gVhE7G2"
+                className="project-link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Scopri il volume su Amazon →
+              </a>
             </article>
 
 
