@@ -90,8 +90,6 @@ function App() {
 
         {/* =========================
             SEZIONE PROGETTI
-            Tutte le card devono stare
-            dentro project-grid
             ========================= */}
         <section id="projects" className="section projects">
           <div className="section-header">
@@ -100,16 +98,62 @@ function App() {
           </div>
 
           <div className="project-grid">
-            {/* Progetto ARCHON */}
-            <article className="project-card featured">
-              <div className="project-badge">Project</div>
 
-              <h3>ARCHON</h3>
+            {/* ─── ARCHON ENGINE (nuovo) ─── */}
+            <article className="project-card featured archon-engine">
+              <div className="project-badge engine-badge">🚀 In sviluppo attivo</div>
+
+              <h3>
+                ARCHON ENGINE
+                <span className="engine-sub">Open Universe</span>
+              </h3>
+
+              <p>
+                Engine spaziale fatto da zero in <strong>C++ e Python</strong>,
+                ispirato a Space Engine. Universo completamente navigabile con
+                cataloghi astronomici reali (<strong>Gaia DR3</strong>,{' '}
+                <strong>HYG</strong>, <strong>NGC</strong> e altri), texture
+                planetarie in <strong>16K / 32K / 64K</strong>, rendering
+                fisicamente basato, fisica orbitale reale e scala 1:1 del cosmo
+                osservabile.
+              </p>
+
+              <div className="project-tags">
+                <span>C++</span>
+                <span>Python</span>
+                <span>OpenGL / Vulkan</span>
+                <span>Gaia DR3</span>
+                <span>HYG</span>
+                <span>NGC</span>
+                <span>PBR</span>
+                <span>Open Universe</span>
+              </div>
+
+              <a
+                href="https://download.cristianalemanno.it"
+                className="project-link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Segui lo sviluppo →
+              </a>
+            </article>
+
+            {/* ─── ARCHON (deprecated) ─── */}
+            <article className="project-card deprecated">
+              <div className="project-badge deprecated-badge">⚠️ Deprecato</div>
+
+              <h3>
+                ARCHON
+                <span className="deprecated-label">Sostituito da ARCHON ENGINE</span>
+              </h3>
 
               <p>
                 Simulatore multiverso gerarchico con frontend React, backend
-                Python/FastAPI e componenti visuali avanzati. Un progetto
-                orientato a simulazione, struttura dati e interazione.
+                Python/FastAPI e componenti visuali avanzati. Progetto
+                sospeso: la visione è confluita nel nuovo{' '}
+                <strong>ARCHON ENGINE</strong>, sviluppo nativo C++ a scala
+                universale.
               </p>
 
               <div className="project-tags">
@@ -121,15 +165,15 @@ function App() {
 
               <a
                 href="https://archon.cristianalemanno.it"
-                className="project-link"
+                className="project-link project-link-deprecated"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Apri ARCHON →
+                Archivio ARCHON v1 →
               </a>
             </article>
 
-            {/* Progetto Tenuta Alexandra */}
+            {/* ─── Tenuta Alexandra ─── */}
             <article className="project-card">
               <div className="project-badge">Live Site</div>
 
@@ -159,7 +203,7 @@ function App() {
               </a>
             </article>
 
-            {/* Simulatore fisico interattivo */}
+            {/* ─── Wave Physics Simulator ─── */}
             <article className="project-card featured">
               <div className="project-badge">Live Demo</div>
 
@@ -190,25 +234,25 @@ function App() {
               </a>
             </article>
 
-                       {/* Volume 1 della collana "Dal quaderno alla realtà" */}
+            {/* ─── Volume 1 ─── */}
             <article className="project-card">
               <div className="project-badge">Libro</div>
-            
+
               <h3>Dal quaderno alla realtà — Volume 1</h3>
-            
+
               <p>
                 Dalla crisi della fisica classica alla rivoluzione einsteiniana: un
                 percorso chiaro e rigoroso nella relatività ristretta e generale, senza
                 salti logici, con formule derivate passo dopo passo e supporto visivo.
               </p>
-            
+
               <div className="project-tags">
                 <span>Fisica</span>
                 <span>Relatività</span>
                 <span>Einstein</span>
                 <span>Volume 1</span>
               </div>
-            
+
               <a
                 href="https://amzn.eu/d/05FvZCk7"
                 className="project-link"
@@ -219,27 +263,26 @@ function App() {
               </a>
             </article>
 
-
-            {/* Volume 2 della collana "Dal quaderno alla realtà" */}
+            {/* ─── Volume 2 ─── */}
             <article className="project-card">
               <div className="project-badge">Libro</div>
-            
+
               <h3>Dal quaderno alla realtà — Volume 2</h3>
-            
+
               <p>
                 Dalla geometria dello spazio-tempo alla cosmologia relativistica:
-                un percorso dedicato all’evoluzione dell’universo, ai buchi neri
+                un percorso dedicato all&apos;evoluzione dell&apos;universo, ai buchi neri
                 e ai wormhole, costruito con rigore matematico, passaggi chiari
                 e una trattazione progressiva dei concetti più complessi.
               </p>
-            
+
               <div className="project-tags">
                 <span>Relatività generale</span>
                 <span>Cosmologia</span>
                 <span>Buchi neri</span>
                 <span>Volume 2</span>
               </div>
-            
+
               <a
                 href="https://amzn.eu/d/0gVhE7G2"
                 className="project-link"
@@ -250,10 +293,7 @@ function App() {
               </a>
             </article>
 
-
-
-
-            {/* Pagina download dedicata al progetto UE5 */}
+            {/* ─── Medieval Landscape UE5 ─── */}
             <article className="project-card featured">
               <div className="project-badge">Download</div>
 
@@ -281,6 +321,7 @@ function App() {
                 Apri pagina download →
               </a>
             </article>
+
           </div>
         </section>
 
@@ -294,7 +335,7 @@ function App() {
             <h2>Costruisco progetti con una direzione precisa</h2>
 
             <p>
-              Mi interessa creare prodotti che non siano solo “funzionanti”, ma
+              Mi interessa creare prodotti che non siano solo "funzionanti", ma
               anche coerenti, ambiziosi e ben strutturati: dal portfolio
               personale a sistemi più complessi come piattaforme, simulatori e
               architetture AI-oriented.
