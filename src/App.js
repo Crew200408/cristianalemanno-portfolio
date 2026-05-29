@@ -99,15 +99,15 @@ function App() {
 
           <div className="project-grid">
 
-            {/* ─── ARCHON ENGINE (nuovo) ─── */}
+           {/* ─── ARCHON ENGINE (nuovo) ─── */}
             <article className="project-card featured archon-engine">
               <div className="project-badge engine-badge">🚀 In sviluppo attivo</div>
-
+            
               <h3>
                 ARCHON ENGINE
                 <span className="engine-sub">Open Universe</span>
               </h3>
-
+            
               <p>
                 Engine spaziale fatto da zero in <strong>C++ e Python</strong>,
                 ispirato a Space Engine. Universo completamente navigabile con
@@ -117,7 +117,7 @@ function App() {
                 fisicamente basato, fisica orbitale reale e scala 1:1 del cosmo
                 osservabile.
               </p>
-
+            
               <div className="project-tags">
                 <span>C++</span>
                 <span>Python</span>
@@ -128,14 +128,17 @@ function App() {
                 <span>PBR</span>
                 <span>Open Universe</span>
               </div>
-
+            
+              {/* Il download non è ancora disponibile — la pagina esiste
+                  ma il build è in fase di sviluppo attivo */}
               <a
                 href="https://download.cristianalemanno.it"
-                className="project-link"
+                className="project-link project-link-soon"
                 target="_blank"
                 rel="noopener noreferrer"
+                title="Download in arrivo — progetto in sviluppo attivo"
               >
-                Segui lo sviluppo →
+                🔒 Download in arrivo — segui lo sviluppo →
               </a>
             </article>
 
